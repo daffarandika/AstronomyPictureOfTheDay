@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { env } from 'src/environment/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AstronomyPictureOfTheDay';
+  key = env.key
 }
