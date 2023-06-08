@@ -8,5 +8,4 @@ import { env } from 'src/environment/environment';
 })
 export class AppComponent {
   title = 'AstronomyPictureOfTheDay';
-  key = env.key
 }

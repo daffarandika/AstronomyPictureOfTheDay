@@ -1,0 +1,35 @@
+.header {
+    background-color: #ffffff;
+    color: black;
+}
+.card-header {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-header-content h1 {
+    font-size: 5vw;
+}
+.card-header-content img {
+    width: 30vw;
+}
+#text-logo {
+    height: 0.625em;
+    width: 2.2em;
+    padding-left: 0px;
+}
+.filler {
+    height: 150vh;
+}
+.sticky {
+    position: fixed;
+    top: 0; 
+    width: 100vw;
+}
