@@ -1,3 +1,14 @@
-.filler {
+.fact-list {
+    display: flex;
     height: 100vh;
+    flex-direction: row;
+    border: solid red;
+    overflow-x: scroll;
 }    
+
+.fact {
+    margin: 10px;
+    border: solid lime;
+    width: 30000px;
+    overflow-y: scroll;
+}
