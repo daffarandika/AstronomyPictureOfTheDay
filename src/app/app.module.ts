@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutHeaderComponent } from './layout-header/layout-header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CropSentencePipe } from './crop-sentence.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutHeaderComponent,
     DashboardComponent,
+    CropSentencePipe,
   ],
   imports: [
     BrowserModule,

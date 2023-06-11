@@ -11,7 +11,7 @@ export class AstronomyService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = 'http://localhost:5000/v1/apod/?start_date=2017-07-08&end_date=2017-07-19'
+  baseUrl = 'http://localhost:5000/v1/apod/?count=2'
 
   getFacts(): Observable<Fact[]> {
     return this.http.get<Fact[]>(this.baseUrl)

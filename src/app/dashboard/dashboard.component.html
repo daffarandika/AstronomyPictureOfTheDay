@@ -1,8 +1,8 @@
 <div class="fact-list">
     <div class="fact" *ngFor="let fact of facts">
-        <h4>{{ fact.title }}</h4>  
+        <h3>{{ fact.title }}</h3>  
         <img src="{{ fact.url }}" alt="">
         <p>{{ fact.date | date:'dd MMMM yyyy' }}</p>
-        <p>{{ fact.explanation }}</p>
+        <p>{{ fact.explanation | cropSentence }}</p>
     </div>
 </div>
