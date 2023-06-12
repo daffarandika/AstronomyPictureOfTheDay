@@ -33,12 +33,12 @@ export class DetailComponent {
     )
   }
   ngAfterContentChecked(){
-    this.scrollToContent()
+    // this.scrollToContent()
   }
   scrollToContent() {
     const fact = document.getElementById('fact')!
     window.scrollTo({
-      top: fact.offsetTop - 10,
+      top: fact.offsetTop - 60,
       behavior: 'smooth',
     })
   }

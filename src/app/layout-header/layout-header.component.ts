@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-layout-header',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout-header.component.css']
 })
 export class LayoutHeaderComponent {
-
+  ngAfterViewInit(){
+    const nav = document.getElementById('nav')!
+    const sticky = nav.offsetTop;
+    window.onscroll = () => {
+      console.log(`${ sticky } ${window.scrollY}`)
+      if (window.scrollY > sticky) {
+        nav.classList.add('sticky')
+      } else {
+        nav.classList.remove('sticky')
+      }
+    }
+  }
 }

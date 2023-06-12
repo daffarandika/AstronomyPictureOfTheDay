@@ -13,11 +13,26 @@
 }
 
 .fact img {
-    object-fit: cover;
-    width: 60%;
-    height: 40%;
+    object-fit: contain;
+    width: 500px;
+    height: 300px;
 }
 
 .fact * {
     padding: 10px;
+}
+
+.fact p {
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-container {
+    height: 90vh;
 }

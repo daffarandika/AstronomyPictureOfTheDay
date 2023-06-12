@@ -1,6 +1,10 @@
-<div class="fact" id="fact">
-    <h3>{{ fact?.title }}</h3>  
-    <img src="{{ fact?.url }}" alt="" (load)="scrollToContent()">
-    <p>{{ fact?.date | date:'d MMMM yyyy' }}</p>
-    <p>{{ fact?.explanation }}</p>
+<div class="fact-container">
+    <div class="fact" id="fact">
+        <div class="image-container">
+            <h3>{{ fact?.title }}</h3>  
+            <img src="{{ fact?.url }}" alt="" (load)="scrollToContent()">
+            <p>{{ fact?.date | date:'d MMMM yyyy' }}</p>
+        </div>
+        <p>{{ fact?.explanation }}</p>
+    </div>
 </div>
