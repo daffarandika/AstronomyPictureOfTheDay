@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LayoutHeaderComponent } from './layout-header/layout-header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CropSentencePipe } from './crop-sentence.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CropSentencePipe } from './crop-sentence.pipe';
     LayoutHeaderComponent,
     DashboardComponent,
     CropSentencePipe,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
