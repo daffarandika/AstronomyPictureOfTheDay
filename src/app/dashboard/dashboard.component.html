@@ -1,8 +1,8 @@
 <div class="fact-list">
-        <div class="fact" *ngFor="let fact of facts" [routerLink]="['/detail']">
-            <h3>{{ fact.title }}</h3>  
-            <img src="{{ fact.url }}" alt="">
-            <p>{{ fact.date | date:'d MMMM yyyy' }}</p>
-            <p>{{ fact.explanation | cropSentence }}</p>
+    <div class="fact" *ngFor="let fact of facts" [routerLink]="['/detail/'+fact.date]">
+        <h3>{{ fact.title }}</h3>  
+        <img src="{{ fact.url }}" alt="">
+        <p>{{ fact.date | date:'d MMMM yyyy' }}</p>
+        <p>{{ fact.explanation | cropSentence }}</p>
     </div>
 </div>

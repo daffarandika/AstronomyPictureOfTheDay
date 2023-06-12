@@ -1,14 +1,3 @@
-.fact-list {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-    border: solid grey;
-    border-radius: 25px;
-    overflow-x: scroll;
-    padding: 5px;
-    margin: 5px;
-}
-
 .fact {
     margin: 10px;
     min-width: 500px;
@@ -25,12 +14,10 @@
 
 .fact img {
     object-fit: cover;
-    width: 70%;
-    height: 50%;
+    width: 60%;
+    height: 40%;
 }
 
-.fact:hover {
-    transform: translate(7px, -7px);
-    box-shadow:-7px 7px red;
+.fact * {
+    padding: 10px;
 }
-
